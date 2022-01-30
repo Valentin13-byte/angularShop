@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="header">
+    <h2>Add product</h2>
+    <button mat-stroked-button>Product list</button>
+  </div>
+  <div class="content">
+
+    <mat-grid-list cols="3" rowHeight="60px" [gutterSize]="'16px'">
+      <mat-grid-tile colspan="1" rowspan="1">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput [(ngModel)]="product.name">
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile colspan="1" rowspan="1">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Price</mat-label>
+          <input matInput [(ngModel)]="product.price" type="number">
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile colspan="1" rowspan="1">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Img</mat-label>
+          <input matInput [(ngModel)]="product.img">
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile colspan="1" rowspan="1">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Description</mat-label>
+          <textarea matInput [(ngModel)]="product.description"></textarea>
+        </mat-form-field>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  <button mat-raised-button color="primary" class="add" (click)="createProduct()">Add Product</button>
+</div>

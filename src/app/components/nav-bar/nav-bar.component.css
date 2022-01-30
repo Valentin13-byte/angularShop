@@ -1,0 +1,19 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid black;
+}
+
+a{
+  margin-left: 24px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+div{
+  display: flex;
+  align-items: center;
+}

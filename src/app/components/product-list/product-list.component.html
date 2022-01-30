@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="header">
+    <h2>Product list</h2>
+    <button mat-stroked-button>+ Add product</button>
+  </div>
+  <div class="content">
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Action</th>
+      </tr>
+      <tr *ngFor="let product of products">
+        <th>{{product.nume}}</th>
+        <th>{{product.pret}}</th>
+        <th>
+          <button mat-stroked-button>Delete</button>
+        </th>
+
+      </tr>
+    </table>
+  </div>
+</div>
